@@ -1,0 +1,7 @@
+
+#makes everything in this directory cacheable for a really long time.
+<ifmodule mod_expires.c>
+	ExpiresActive On
+	ExpiresDefault "access plus 1 year"
+	Header append Cache-Control "public"
+</ifmodule>

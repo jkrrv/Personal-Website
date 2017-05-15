@@ -1,0 +1,102 @@
+@import (inline) url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+
+@fa_path: "../node_modules/font-awesome/less";
+@import (reference) "@{fa_path}/variables.less";
+@fa-font-path: "static/fonts";
+//@import (less) "@{fa_path}/mixins.less";
+@import (less) "@{fa_path}/path.less";
+//@import (less) "@{fa_path}/core.less";
+//@import (reference,less) "@{fa_path}/icons.less";
+
+.fa-github:before {
+  content:@fa-var-github;
+}
+
+.fa-linkedin:before {
+  content:@fa-var-linkedin;
+}
+
+.fa-facebook:before {
+  content:@fa-var-facebook;
+};
+
+.fa-twitter:before {
+  content:@fa-var-twitter;
+};
+
+.fa-calendar-check-o:before {
+  content:@fa-var-calendar-check-o;
+}
+
+.fa-envelope-o:before {
+  content:@fa-var-envelope-o;
+}
+
+.fa-file-text:before {
+  content:@fa-var-file-text;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background: #468cb0 url('static/keystone.jpg') center;
+  background-size: cover;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  & > div {
+    background: rgba(255, 255, 255, .7);
+    position: absolute;
+    width: 600px;
+    max-width: 100%;
+    text-align: center;
+    padding: 5vh 0;
+    top:0;
+    left:50%;
+    transform:translateX(-50%);
+
+    & > span {
+      display: block;
+      padding: 0 1em;
+    }
+
+    a {
+
+      font-size: 1.6em;
+      @media (max-width: 400px) {
+        font-size:6vw;
+      }
+      text-decoration: none;
+      display: inline-block;
+      position: relative;
+      padding: .3em;
+      border-radius: .3em;
+      width: 1em;
+      line-height: 1em;
+      height: 1em;
+      margin: 3vh .25em .25em;
+      transition: all .3s;
+      top: 0;
+
+      &::before {
+        font-family: FontAwesome, sans-serif;
+      }
+      &:link, &:visited {
+        color: #fff;
+        background: #468cb0;
+      }
+      &:hover, &:active {
+        color: #FEF0B1;
+        background: #84a4b2;
+        top: -1px;
+      }
+    }
+
+    h1 {
+      font-size:1.2em;
+      margin:0;
+    }
+  }
+}
+
+
