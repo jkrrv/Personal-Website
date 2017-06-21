@@ -9,7 +9,7 @@
     <span>The personal page of</span>
     <h1>James Kurtz.</h1>
     <span>Someday, this page will be interesting.</span>
-    <span>In the meantime, here are some links and a pretty picture from ski season.</span>
+    <span>In the meantime, here are some links and a pretty picture from a hike last week.</span>
     <a href="github" class="fa-github" title="Github"></a>
     <a href="linkedin" class="fa-linkedin" title="LinkedIn"></a>
     <a href="facebook" class="fa-facebook" title="Facebook"></a>
@@ -20,6 +20,5 @@
     <a href="resume" class="fa-file-text" title="R&#xE9;sum&#xE9;"></a>
 </div>
 <script><?php include 'scripts/inline.min.js'; ?></script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
 </body>
 </html>

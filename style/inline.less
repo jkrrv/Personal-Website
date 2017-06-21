@@ -37,13 +37,20 @@
   content:@fa-var-file-text;
 }
 
+@keyframes backgroundScroll {
+  from {background-position-x: 0;}
+  to {background-position-x: 600%;}
+}
+
 body {
   font-family: 'Josefin Sans', sans-serif;
-  background: #468cb0 url('static/keystone.jpg') center;
+  background: #468cb0 url('static/bierstadt2.jpg') repeat-x;
+  animation: backgroundScroll 3600s linear infinite;
   background-size: cover;
   margin: 0;
   display: flex;
   justify-content: center;
+
   & > div {
     background: rgba(255, 255, 255, .7);
     position: absolute;
@@ -61,7 +68,6 @@ body {
     }
 
     a {
-
       font-size: 1.6em;
       @media (max-width: 400px) {
         font-size:6vw;
@@ -86,7 +92,7 @@ body {
         background: #468cb0;
       }
       &:hover, &:active {
-        color: #FEF0B1;
+        color: #fef0b1;
         background: #84a4b2;
         top: -1px;
       }
