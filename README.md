@@ -8,5 +8,5 @@ While a couple external libraries are used, they are used very sparingly, and on
 
 Currently, CSS and JavaScript are inlined by server-side insertion at run-time.  At some point, the intent is to move this to a compile-time or deploy-time insertion, making the page more static.
 
-Also, quite soon, I intend on moving this site to the CMS I've build on AWS, which currently handles most of the other websites I manage. 
+Also, quite soon, I intend on moving this site to the CMS I've built on AWS, which currently handles most of the other websites I manage. 
 
