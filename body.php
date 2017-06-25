@@ -3,6 +3,16 @@
     <style><?php include 'style/inline.min.css'; ?></style>
     <title>James Kurtz</title>
     <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <meta property="og:site_name" content="James Kurtz's Personal Site" />
+    <meta property="og:title" content="James Kurtz" />
+    <meta property="og:description" content="Someday, this page will be interesting.  In the meantime, here are some links and a pretty picture from a hike last week." />
+    <meta property="og:image:url" content="http://kurtz.es/static/bierstadtOG.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@jkrrv">
+    <meta name="twitter:creator" content="@jkrrv">
+    <meta property="twitter:title" content="James Kurtz" />
+    <meta property="twitter:description" content="Someday, this page will be interesting.  In the meantime, here are some links and a pretty picture from a hike last week." />
+    <meta property="twitter:image" content="http://kurtz.es/static/bierstadtOG.jpg" />
 </head>
 <body>
 <div>
