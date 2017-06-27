@@ -1,8 +1,11 @@
 <?php
 
 $requestedPage = null;
-if (isset($_GET['requestedPage']))
+if (isset($_GET['requestedPage'])) {
 	$requestedPage = $_GET['requestedPage'];
+} else {
+	$requestedPage = explode('/',$_SERVER['REQUEST_URI'])[1];
+}
 
 
 switch($requestedPage) {
