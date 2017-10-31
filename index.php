@@ -1,5 +1,14 @@
 <?php
 
+// HTTPS & HSTS
+if ((!isset($_SERVER['HTTPS']) || !$_SERVER['HTTPS']) && strpos($_SERVER["SERVER_NAME"], "sexy")===false) {
+	header("HTTP/1.1 301 Moved Permanently");
+	header("Location: https://" . $_SERVER["SERVER_NAME"] . $_SERVER["REQUEST_URI"]);
+	exit();
+}
+header("Strict-Transport-Security: max-age=31536000; preload");
+
+
 $requestedPage = null;
 if (isset($_GET['requestedPage'])) {
 	$requestedPage = $_GET['requestedPage'];
