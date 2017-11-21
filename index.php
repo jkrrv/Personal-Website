@@ -16,6 +16,7 @@ if (isset($_GET['requestedPage'])) {
 	$requestedPage = explode('/',$_SERVER['REQUEST_URI'])[1];
 }
 
+$mode = false;
 
 switch($requestedPage) {
 	case "availability":
@@ -36,6 +37,19 @@ switch($requestedPage) {
 	case "resume":
 		header( 'Location: resume.pdf') ;
 		die();
+	case "work":
+		$mode = 'work';
+		break;
+
+	case "":
+		break;
+
+	default:
+		$mode = 404;
+}
+
+if ($mode === 404) {
+	header("HTTP/1.1 404 Not Found");
 }
 
 require_once "body.php";
