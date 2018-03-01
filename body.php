@@ -15,9 +15,11 @@
     <meta property="twitter:image" content="https://kurtz.es/static/bierstadtOG.jpg" />
 
     <meta name="application-name" content="James Kurtz"/>
-    <meta name="msapplication-TileColor" content="#000033"/>
+    <meta name="msapplication-TileColor" content="#223659"/>
     <meta name="msapplication-starturl" content="/" />
-    <meta name="msapplication-navbutton-color" content="#000033" />
+    <meta name="msapplication-navbutton-color" content="#223659" />
+
+    <meta name="theme-color" content="#223659">
 
     <meta property="og:type" content="profile" />
 	<?php if ($mode !== 'work') { ?>
@@ -40,7 +42,7 @@
 	<?php } else { ?>
     <h1>Uhh oh</h1>
     <span>Couldn't find the thing you were looking for.</span>
-    <span>But, here are some links and a pretty picture from a recent hike.</span>
+    <span>But, here are some links and a pretty picture from a hike last summer.</span>
 	<?php } ?>
     <a href="/github" class="fa-github" title="GitHub"></a>
     <a href="/linkedin" class="fa-linkedin" title="LinkedIn"></a>
