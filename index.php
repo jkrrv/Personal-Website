@@ -9,6 +9,11 @@ if ((!isset($_SERVER['HTTPS']) || !$_SERVER['HTTPS']) && strpos($_SERVER["SERVER
 header("Strict-Transport-Security: max-age=31536000; preload");
 
 
+header("Access-Control-Allow-Credentials: true");
+header("Cache-Control: public, max-age=1800, s-maxage=1800, immutable");
+header_remove('X-Powered-By');
+
+
 $requestedPage = null;
 if (isset($_GET['requestedPage'])) {
 	$requestedPage = $_GET['requestedPage'];
